@@ -1,41 +1,35 @@
 #include <iostream>
-
-// functions
-
-int addNumbers(int first_param, int second_param)
-{
-
-   int result = first_param + second_param;
-   return result;
-}
-
-int multiplyNumbers(int num1, int num2)
-{
-   int multiplyResult = num1 + num2;
-   return multiplyResult;
-}
+#include <string>
 
 int main()
 {
-   int first_number{20}; // statement
-   int second_number{50};
 
-   int sum = first_number + second_number;
+   /* std::cout << "hello c++" << std::endl;
+    std::cerr << "somehting is wrong" << std ::endl;
+    std::clog << "log message" << std::endl;
 
-   std::cout << "first number : " << first_number << std::endl;
-   std::cout << "second number : " << second_number << std::endl;
-   std::cout << "sum1 : " << sum << std::endl;
+    */
 
-   sum = addNumbers(20, 20);
+   /* int age1;
+    std::string name;
+    std::cout << "enter your name and age : " << std ::endl;
 
-   std::cout
-       << "sum using function : " << sum << std::endl;
+    std::cin >> name;
+    std ::cin >> age1;
 
-   std::cout << "inline function call : " << addNumbers(100, 100) << std::endl;
 
-   sum = multiplyNumbers(100, 100);
+    std::cin >> name >> age1;
+    std::cout << "hello " << name << " you are " << age1 << " years old" << std::endl;
+ */
 
-   std ::cout << "multiply numbers : " << sum << std::endl;
+   // data with sapces
+
+   std::string full_name;
+   int age3;
+   std::cout << "please enter your full name and age" << std::endl;
+   std::getline(std ::cin, full_name);
+   std ::cin >> age3;
+   std::cout << "hello " << full_name << " your are " << age3 << " years old" << std::endl;
 
    return 0;
 }
