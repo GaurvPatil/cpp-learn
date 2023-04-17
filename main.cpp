@@ -4,15 +4,34 @@
 int main()
 {
 
-int number1 = 15; //decimal
-int number2 = 017; //octal 
-int number3 = 0x0f; //hexadecinal
-int number4 = 0b00001111; //binary
+   // barced initializer
+   /*  int elephant_count;
+     int lion_count{};
+     int dog_count{10};
+     int cat_count{15};
+     */
 
+   // functional initialization
+   /*  int elephant_count;
+     int lion_count;
+     int dog_count(10);
+     int cat_count(15.5);
+     */
 
-std::cout << "number one : " << number1 << std::endl;
-std::cout << "number two : " << number2 << std :: endl;
-std:: cout << "number three : " << number3 << std::endl;
-std:: cout << "number four : " << number4 << std::endl;
+   // Assigment initialization
+
+   int elephant_count;
+   int lion_count;
+   int dog_count = 10;
+   int cat_count = 15.5;
+
+   int domesticates_animals{dog_count + cat_count};
+
+   std::cout << "elepehent count: " << elephant_count << std::endl;
+   std::cout << "lion count: " << lion_count << std::endl;
+   std ::cout << "dog count: " << dog_count << std::endl;
+   std ::cout << "cat count: " << cat_count << std::endl;
+   std::cout << "domestic animals: " << domesticates_animals << std::endl;
+
    return 0;
 }
